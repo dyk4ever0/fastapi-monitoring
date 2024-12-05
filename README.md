@@ -1,5 +1,7 @@
-#fastapi 모니터링 구성
-##프로젝트 구조
+# fastapi 모니터링 구성 
+
+## 프로젝트 구조 
+
 ```
 home/ubuntu/
 ├── llm_AnswerGen-sroberta_hybrid/    # API 애플리케이션
@@ -15,7 +17,7 @@ home/ubuntu/
         └── loki/                     # 로그 수집
 ```
 
-##구성 요소
+## 구성 요소
 - FastAPI: 5000번 포트에서 실행 (nohup uvicorn app:app --host 0.0.0.0 --port 5000)
 - 모니터링 스택 (도커 컨테이너):
     - Prometheus (9090): 메트릭 수집
